@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>day2</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            width: 100%;
+            height: 70%;
+            background-color: #fadb14;
+        }
+
+        #title {
+            float: left;
+        }
+
+        .center {
+            width: 100%;
+            height: 3200px;
+            background-color: #faad14;
+        }
+
+        .footer {
+            width: 100%;
+            height: 10%;
+            background-color: #874d00;
+
+        }
+
+        .center .left {
+            width: 20%;
+            height: 100%;
+            background-color: #faad14;
+            float: left;
+
+        }
+
+        .right {
+            width: 80%;
+            height: 3200px;
+            background-color: #ffc53d;
+            float: left;
+        }
+
+        .right_top {
+            width: 70%;
+            height: 100px;
+            background-color: #ffc53d;
+            margin: 0 auto;
+        }
+
+        .head .img1 {
+            height: 100px;
+            width: 400px;
+            background-color: #fadb14;
+            margin: 0 auto;
+
+        }
+
+        .img1 .coffee {
+            height: 100px;
+            width: 50px;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .img1 #title {
+            padding-left: 20px;
+        }
+
+        .img1 p {
+            margin-top: 15px;
+            float: left;
+            font-size: 50px;
+            color: white;
+        }
+
+        .right_top img {
+            width: 400px;
+            height: 300px;
+        }
+
+        .left .choose {
+            position: fixed;
+        }
+
+        .left .choose li {
+            padding-top: 50px;
+            margin-left: 80px;
+        }
+
+        .left .choose ul {
+            position: fixed;
+        }
+        
+        .footer p {
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            vertical-align: middle;
+            
+        }
+
+        .right_bottom {
+            padding-left: 200px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .center .right table {
+            margin: 20px auto;
+            width: 500px;
+            height: 250px;
+            border-collapse: collapse;
+
+        }
+
+        .center .right table td,
+        .center .right table th {
+            border: 1px solid #000;
+        }
+
+        .center .right table td {
+            text-align: center;
+            line-height: 100%;
+        }
+
+        .title {
+            height: 300px;
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .title img {
+            width: 100%;
+            height: 100%;
+        }
+        #coffee1,#coffee2,#coffee3,#coffee4,#coffee5{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="img1">
+            <img src="aec379310a55b31900e2b16a49a98226cffc1791.jpg" alt="" style="width: 75px;height: 75px;"
+                class="coffee">
+            <p id="title">来杯咖啡吗？</p>
+        </div>
+
+    </div>
+    <div class="center">
+        <div class="left">
+            <ul class="choose">
+                <li><a href="#coffee1">拿铁</a></li>
+                <li><a href="#coffee2">卡布奇洛</a></li>
+                <li><a href="#coffee3">奥瑞白</a></li>
+                <li><a href="#coffee4">美式咖啡</a></li>
+                <li><a href="#coffee5">焦糖玛奇朵</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <div class="title">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571736190312&di=86261075611cfe9917f6cde1039a2429&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201412%2F28%2F20141228091401_8xtTK.jpeg"
+                    alt="">
+            </div>
+            <table>
+                <tr>
+                    <th>咖啡名称</th>
+                    <th>咖啡价格(元/杯)</th>
+                </tr>
+                <tr>
+                    <td>拿铁</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>卡布奇诺</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>奥瑞白</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>美式咖啡</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>焦糖玛奇朵</td>
+                    <td>300</td>
+                </tr>
+            </table>
+            <br><br><br>
+            <div id="coffee1">
+
+                <img src="aec379310a55b31900e2b16a49a98226cffc1791.jpg" alt="" id="coffee1">
+
+
+                <h3>拿铁</h3>
+
+                <p>咖啡树是属茜草科多年生常绿灌木或小乔木，日常饮用的咖啡是用咖啡豆配合各种不同的烹煮器具制作出来的，而咖啡豆就是
+                    指咖啡树果实里面的果仁，再用适当的方法烘焙而成，一杯标准的咖啡品尝起来的味道不应该是苦涩的，一名合格的咖啡师在
+                    制作咖啡时会严谨地进行每一步操作，最后为客人呈上的咖啡在味觉上会呈现出不同程度的甜度、酸度、醇厚度或是干净度。
+                </p>
+            </div>
+            <div id="coffee2">
+                <br><br><br><br><br>
+                <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=89152eacefdde711e7d244f09fd4a926/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                    alt="">
+
+
+                <h3>卡布奇诺</h3>
+
+                <p>爱喝咖啡的人们，发觉浓缩咖啡、牛奶和奶泡混合后，颜色就像是修士所穿的深褐色道袍，于是灵机一动，就给牛奶加咖啡又有尖尖奶泡的饮料，取名为卡布奇诺(Cappuccino)。英文最早使用此字的时间在一九四八年，当时旧金山一篇报导率先介绍卡布奇诺饮料，一直到一九九零年以后，才成为世人耳熟能详的咖啡饮料。应该可以这么说Cappuccino咖啡这个字，源自圣芳济教会(Capuchin)和意大利文头巾(Cappucio)，相信Cappuccino的原始造字者，做梦也没料到僧侣的道袍最后会变成一种咖啡饮料名称。
+                </p>
+            </div>
+            <div id="coffee3">
+                <br><br><br><br><br>
+                <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=89152eacefdde711e7d244f09fd4a926/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                    alt="">
+
+                <h3>奥瑞白</h3>
+
+                <p>爱喝咖啡的人们，发觉浓缩咖啡、牛奶和奶泡混合后，颜色就像是修士所穿的深褐色道袍，于是灵机一动，就给牛奶加咖啡又有尖尖奶泡的饮料，取名为卡布奇诺(Cappuccino)。英文最早使用此字的时间在一九四八年，当时旧金山一篇报导率先介绍卡布奇诺饮料，一直到一九九零年以后，才成为世人耳熟能详的咖啡饮料。应该可以这么说Cappuccino咖啡这个字，源自圣芳济教会(Capuchin)和意大利文头巾(Cappucio)，相信Cappuccino的原始造字者，做梦也没料到僧侣的道袍最后会变成一种咖啡饮料名称。
+                </p>
+            </div>
+            <div id="coffee4">
+                <br><br><br><br><br>
+                <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=89152eacefdde711e7d244f09fd4a926/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                    alt="">
+
+                <h3>美式咖啡</h3>
+
+                <p>美式咖啡”（英文：Americano，意大利语：Caffè Americano）咖啡的一种，是最普通的咖啡。是使用滴滤式咖啡壶所制作出的黑咖啡，又或者是意式浓缩中加入大量的水制成。
+                    美式咖啡口味比较淡。因为一般的萃取时间相对较长（大概四五分钟），所以咖啡因含量较高。
+                </p>
+            </div>
+            <div id="coffee5">
+                <br><br><br><br><br>
+                <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=89152eacefdde711e7d244f09fd4a926/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                    alt="">
+
+                <h3>焦糖玛奇朵</h3>
+
+                <p>焦糖玛奇朵（英文：Caramel
+                    Macchiato）是在香浓热牛奶上加入浓缩咖啡、香草，再淋上纯正焦糖而制成的饮品，融合三种不同口味。Macchiato意大利文，意思是“烙印”和“印染”，中文音译“玛奇朵”。“Caramel”意思是焦糖。焦糖玛琪朵，寓意“甜蜜的印记”。
+                </p>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>版权所有&copy极客大叔</p>
+    </div>
+</body>
+
+</html>
