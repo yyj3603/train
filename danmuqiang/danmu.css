@@ -1,0 +1,51 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    text-align-last: center;
+}
+.danmu{
+    width: 960px;
+    height: 600px;
+    margin: 20px auto;
+    background-color: white;
+   
+    
+}
+.content{
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+    height: 500px;
+    border: 1px solid black;
+  
+    border-right: black 1px solid;
+}
+#input{
+    width: 300px;
+    height: 30px;
+    margin: 10px 8px 8px 0;
+    border: 1px solid rgb(156, 153, 153);
+    border-radius: 3px;
+}
+#input:hover{
+    border: solid 1px #40a9ff;
+}
+button{
+    width: 100px;height: 30px;
+}
+
+.sc{
+    text-align: center;
+}
+.sc #send,.sc #clear{
+    border: 1px solid rgb(156, 153, 153);
+    
+    background-color: white;
+    border-radius: 5px;
+}
+.sc #send:hover,.sc #clear:hover{
+    background-color: white;
+    border:1px solid #40a9ff;
+    color: #40a9ff;
+}
