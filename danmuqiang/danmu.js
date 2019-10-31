@@ -1,26 +1,27 @@
 window.onload = function () {
     var arr = ["神奇宝贝", "IG", "李哥太秀了", "IG牛逼", "厉害了"];
     for (var i = 0; i < arr.length; i++) {
-        var yy = this.createDm(arr[i]);
-        this.time(yy);
+        createDm(arr[i]);
+        console.log("1");
     }
+
 }
-var timers = []; //弹幕定时
+
 var isShow = true;
 //发送按钮点击事件
 $("#send").on("click", function () {
     //创建弹幕
-    var dom = createDm($("#input").val());
-    //添加定时
-    time(dom);
+    createDm($("#input").val());
+    
+    console.log("2");
 });
 //绑定input获取焦点时的键盘事件
 $("input").keydown(function (event) {
     if (event.keyCode == 13) {
         //创建弹幕
-        var dom = createDm($("#input").val());
-        //添加定时
-        time(dom);
+        createDm($("#input").val());
+        
+        console.log("3");
     }
 
 })
@@ -48,23 +49,17 @@ function createDm(text) {
         "white-space": 'nowrap'
     })
     $(".content").append(dom);
-    return dom;
+    move(dom);
+    
 }
 //定时器
-function time(dom) {
+/* function time(dom) {
     var speed = Math.random() * 3 + 1;
     var left = dom.offset().left - $(".content").offset().left;
     var timer = setInterval(function () {
         left = left - speed;
         dom.css("left", left + "px");
-        /*  if(parseFloat(dom.css("right"))>830){
-             dom.remove();
-             clearInterval(timer);
-         } */
-        /* if ((dom.offset().left + dom.width()) < $(".content").offset().left) {
-            dom.remove()
-            clearInterval(timer)
-        } */
+     
         if ((dom.offset().left + dom.width()) < $(".content").offset().left) {
             dom.css("left",800);
             time(dom);
@@ -73,4 +68,16 @@ function time(dom) {
 
     }, 5);
     timers.push(timer);
+} */
+function move(dom){
+    var ove = dom.width();
+    var speed = Math.random() * 4000 + 5000;
+    var boxw=$(".content").width();
+    dom.animate({
+        "left": -ove
+    }, speed, function () {
+        /* $(this).remove(); */
+        dom.css("left",boxw);
+        move(dom);
+    })
 }
