@@ -68,7 +68,7 @@ $(document).ready(function () {
         $("#imgList").animate({
             "left": -1519 * index
         }, 300);
-        $('.navDiv a').eq(index).css("background-color", "red")
+        $('.navDiv a').eq(index).css("background-color", "#262626")
             .siblings().css("background-color", "rgba(100,100,100,0.3)");
     })
     $(".right").mouseover(function () {
@@ -84,7 +84,7 @@ $(document).ready(function () {
         $("#imgList").animate({
             "left": -1519 * index
         }, 300);
-        $('.navDiv a').eq(index).css("background-color", "red")
+        $('.navDiv a').eq(index).css("background-color", "#262626")
             .siblings().css("background-color", "rgba(100,100,100,0.3)");
     })
 })

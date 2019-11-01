@@ -1,0 +1,146 @@
+/*首页的css*/
+*{
+    margin:0;padding: 0;
+}
+body{
+  /*   background-color: #f5f5f5; */
+}
+h2{
+    text-align: center;
+}
+hr{
+    height: 1px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: black;
+    border: none;
+}
+.width_all{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 标题栏 */
+.header{
+    /* background-color: cyan; */
+  /*   height: 50px; */
+    line-height: 50px;
+    background-color: #f5f5f5;
+}
+.header p{
+    text-align: center;
+    font-size: 28px;
+}
+
+ a{
+    text-decoration: none;
+}
+.header .logo img{
+    width: 40px;height: 40px;vertical-align: middle;
+}
+.header .link{
+    
+    float: right;
+}
+.header .link li{
+    float: left;
+    padding: 0 10px ;
+    list-style: none;  
+}
+.header .link li a:hover{
+    color: #262626;
+    font-weight: bold;
+}
+.header .logo span{
+    color: #262626;
+    font-weight: bold;
+}
+/*地图和简介*/
+.content{
+    width: 1200px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-bottom: 400px;
+}
+.content .content_left{
+    width: 600px;
+    float: left;
+}
+.content .content_right{
+    width: 500px;
+    float: right;
+    
+}
+/*地图*/
+#container{
+    width: 600px;
+    height: 300px;
+}
+/*简介*/
+.content .content_right img{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+#content .content_right span {
+    line-height: 40px
+}
+
+/*底部*/
+.clean{
+    clear: both;
+}
+.footer{
+    
+    width: 100%;
+    height: 400px;
+    background-color: #d9d9d9;
+    margin: 0 auto;
+   
+}
+.footer .footer_top{
+    width: 1200px;
+    height: 300px;
+    background-color: #d9d9d9;
+    margin: 0 auto;
+}
+.footer_top .footer1,.footer2,.footer3,.footer4{
+    width: 300px;
+    text-align: center;
+    background-color: #d9d9d9;
+    display: inline-block;
+    float: left;
+}
+.footer_top .footer1 img,.footer2 img,.footer3 img,.footer4 img{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+}
+.footer_top .footer1,.footer2,.footer3,.footer4{
+    height: 300px;
+}
+.footer .footer_bottom{
+    width: 1200px;
+    height: 50px;
+    background-color: #d9d9d9;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.footer_bottom {
+    margin-top: 5px;
+    text-align: center;
+}
+.footer_bottom hr{
+    width: 20%;
+}
+.footer .footer_top .footer1:hover,.footer2:hover,.footer3:hover,.footer4:hover{
+    background-color: #8c8c8c;
+}
+.footer .footer_top .footer1 p:hover{
+    background-color: #8c8c8c;
+}
+/* @media screen and (max-width: 300px) {
+    .new_content{
+        display: none;
+    }
+} */
