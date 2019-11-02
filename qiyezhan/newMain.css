@@ -173,11 +173,9 @@ a {
 .footer3:hover,
 .footer4:hover {
     background-color: #8c8c8c;
+    cursor: pointer;
 }
 
-.footer .footer_top .footer1 p:hover {
-    background-color: #8c8c8c;
-}
 
 /* @media screen and (max-width: 300px) {
     .new_content{
