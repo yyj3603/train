@@ -8,7 +8,7 @@ var i=getQueryString("ind")
 $(document).ready(function() {
     /**启用动画 */
     $(".loading i").css("animation-play-state","running");
-    axios.get('http://5dbd26ee30411e0014f2732e.mockapi.io/newsMain')
+    axios.get('https://5dbd26ee30411e0014f2732e.mockapi.io/newsMain')
             .then(function(res) {
                 console.log(res.data[i]);
                     $('title').html(res.data[i].title);

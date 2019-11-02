@@ -1,6 +1,6 @@
 $(document).ready(function () {
    //获取api新闻图片和文本
-   axios.get('http://5dbd26ee30411e0014f2732e.mockapi.io/news')
+   axios.get('https://5dbd26ee30411e0014f2732e.mockapi.io/news')
    .then(function (res) {
        /*如果成功进入.then*/
        console.log('data', res.data[0].url);
