@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" ></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" ></script>
+    <!-- babel是解析JSX必备的库 -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Document</title>
+    <script type="text/babel">
+    
+    class AuthPage extends React.Component{
+        constructor(props) {
+            super(props);
+            this.state={isLogined:false};
+        }
+        login=()=>{
+            this.setState({
+                isLogined:true
+            })
+        }
+        logout=()=>{
+            this.setState({
+                isLogined:false
+            });
+        }
+        render(){
+            const {isLogined}=this.state;
+            if(isLogined){
+                return <div>
+                    <span>你已经登陆</span>
+                    <button onClick={this.logout}>登出</button>
+                    </div>
+            }else{
+                return <div>
+                    <span style={{color:'red'}}>你还未登陆</span>
+                    <button onClick={this.login}>登陆</button>
+                    </div>
+            }
+        }
+    }
+    class App extends React.Component{
+        render(){
+           return <div><AuthPage/></div>;
+        }
+    }
+    ReactDOM.render(
+        <App/>,
+        document.getElementById('container')
+    );
+        </script>
+</head>
+<body>
+        <div id="container"></div>
+     
+   
+   
+</body>
+</html>

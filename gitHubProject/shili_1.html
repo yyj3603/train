@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" ></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" ></script>
+    <!-- babel是解析JSX必备的库 -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Document</title>
+    <script type="text/babel">
+    
+    function tick() {
+        const element=(
+            <div>
+            <h1>hello</h1>
+            <h2>it is{new Date().toLocaleTimeString()}</h2>
+            </div>
+        );
+        ReactDOM.render(element,document.getElementById('container'))
+    }
+       setInterval(tick,1000)
+        </script>
+</head>
+<body>
+        <div id="container"></div>
+     
+   
+   
+</body>
+</html>
